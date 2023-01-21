@@ -1,0 +1,225 @@
+:root {
+  --fundo: #08a8ff;
+  --colorText: #660000;
+  --colorUserEnter: #007cff;
+  --colorButton: #532f51;
+  --bcHome: #800080;
+  --border: #ffff00;
+  --bb: linear-gradient(red, green, yellow);
+}
+.home {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--bcHome);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.siteBar::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  border-bottom: 3px solid var(--border);
+  margin-top: 5.4rem;
+}
+.siteBar {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  gap: 1rem;
+  background-color: var(--colorUserEnter);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4.5rem;
+}
+.localAvatar::before {
+  content: "";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  animation: lds-hourglass 0.9s infinite;
+  background: linear-gradient(red, green, yellow);
+}
+.localAvatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--bcHome);
+  border-radius: 50%;
+  background-color: white;
+}
+.localAvatar img {
+  position: absolute;
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 50%;
+}
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: black;
+  gap: 1rem;
+  width: 70%;
+}
+.name {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  width: 90%;
+  height: 2.5rem;
+  cursor: pointer;
+  color: #800080;
+}
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  gap: 10px;
+  width: 90%;
+  height: 2rem;
+}
+.div a {
+  font-weight: 700;
+  height: 100%;
+  cursor: pointer;
+}
+.div a:hover {
+  color: var(--colorText);
+  border-bottom: 4px solid var(--bcHome);
+  transition: 0.5s;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 90%;
+  height: 80%;
+  margin-bottom: 3rem;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--colorUserEnter);
+  height: 2rem;
+  font-size: 1.3rem;
+  background-color: #fff;
+  text-shadow: 0 0 0.2em #f87, 0 0 0.2em #f87;
+}
+.mini_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  height: 90%;
+}
+.infor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  height: 30%;
+}
+span {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: var(--colorUserEnter);
+  padding: 5px;
+  font-family: cursive;
+  font-weight: 600;
+  color: white;
+}
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--colorUserEnter);
+  color: var(--colorText);
+  border-bottom: 2px solid var(--border);
+}
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--bcHome);
+  border-radius: 50%;
+  background-color: white;
+}
+.avatar img {
+  position: absolute;
+  width: 3.7rem;
+  height: 3.7rem;
+  border-radius: 50%;
+}
+.lista_de_atividades {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 6px;
+  background-color: var(--colorButton);
+  width: 100%;
+  height: 40%;
+}
+.lista {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+}
+strong {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  height: 70%;
+  padding: 4px;
+  background-color: var(--bcHome);
+  border: 1px solid var(--border);
+  font-weight: 700;
+  color: white;
+}
+@keyframes lds-hourglass {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}

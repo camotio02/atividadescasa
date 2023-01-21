@@ -1,0 +1,47 @@
+:root {
+    --fundo: #08a8ff;
+    --colorText: #660000;
+    --colorUserEnter: #007cff;
+    --colorButton: #532f51;
+}
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-color: var(--fundo);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    font-weight: 700;
+    color: var(--colorText);
+}
+.buttonEnter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 2rem;
+    font-family: serif;
+    font-size: 1.2rem;
+    color: white;
+    background-color: var(--colorButton);
+    border-radius: 2rem;
+    outline: none;border: none;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+
