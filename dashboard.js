@@ -1,3 +1,7 @@
+var pessoas = {
+    pessoa1: 'Casa, todos lixos, roupas, panos e os lixos da cozinha.',
+    pessoa2: 'Cozinha, todos os banheiros e a calçada.'
+}
 function time() {
     today = new Date();
     h = today.getHours();
@@ -10,6 +14,8 @@ function time() {
         ${addZero(today.getMonth())}/
         ${addZero(today.getFullYear())}
         `
+    tarefa0 = document.getElementById('tarefa0')
+    tarefa1 = document.getElementById('tarefa1')
     domingo = document.getElementById('domingo')
     segunda = document.getElementById('segunda')
     terca = document.getElementById('terca')
@@ -20,31 +26,31 @@ function time() {
     var semana = [0, 1, 2, 3, 4, 5, 6];
     if (semana.indexOf(0) == today.getDay()) {
         domingo.classList.add("hoje")
-    } else if(semana.indexOf(1) == today.getDay()) {
+    } else if (semana.indexOf(1) == today.getDay()) {
         domingo.classList.remove('hoje');
         segunda.classList.add("hoje")
 
-    } else if(semana.indexOf(2) == today.getDay()) {
+    } else if (semana.indexOf(2) == today.getDay()) {
 
         segunda.classList.remove('hoje');
         terca.classList.add("hoje")
 
-    } else if(semana.indexOf(3) == today.getDay()) {
+    } else if (semana.indexOf(3) == today.getDay()) {
 
         terca.classList.remove('hoje');
         quarta.classList.add("hoje")
 
-    } else if(semana.indexOf(4) == today.getDay()) {
+    } else if (semana.indexOf(4) == today.getDay()) {
 
         quarta.classList.remove('hoje');
         quinta.classList.add("hoje")
 
-    } else if(semana.indexOf(5) == today.getDay()) {
+    } else if (semana.indexOf(5) == today.getDay()) {
 
         quinta.classList.remove('hoje');
         sexta.classList.add("hoje")
 
-    } else if(semana.indexOf(6) == today.getDay()) {
+    } else if (semana.indexOf(6) == today.getDay()) {
 
         sexta.classList.remove('hoje');
         sabado.classList.add("hoje")
