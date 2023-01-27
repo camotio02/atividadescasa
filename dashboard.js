@@ -61,7 +61,6 @@ function time() {
     }
     setTimeout('time()', 500);
 }
-
 const tasks = [
     `  <strong id="tarefa0">
         Cozinha, todos os banheiros e a calçada.
@@ -73,7 +72,6 @@ const tasks = [
         </strong>
     `
 ]
-
 function getTasks() {
     const containers = document.querySelectorAll('.lista')
     const currentdate = new Date()
