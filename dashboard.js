@@ -27,8 +27,8 @@ function getTasks() {
         containers[0].innerHTML = tasks[1]
         containers[1].innerHTML = tasks[0]
     }
+    getTasks()
 }
-getTasks()
 function time() {
     today = new Date();
     h = today.getHours();
