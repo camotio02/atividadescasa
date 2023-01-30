@@ -28,7 +28,7 @@ function getTasks() {
         containers[1].innerHTML = tasks[0]
     }
 }
-
+getTasks()
 function time() {
     today = new Date();
     h = today.getHours();
@@ -86,6 +86,6 @@ function time() {
         sabado.classList.remove('hoje');
         segunda.classList.add("hoje")
     }
-    getTasks()
+
     setTimeout('time()', 500);
 }
