@@ -21,11 +21,11 @@ function getTasks() {
     const weekNumber = Math.ceil((currentdate.getDay() + 1 + numberOfDays) / 7);
     //verifica se o weekNumber é par
     if ((weekNumber % 2) === 0) {
-        containers[0].innerHTML = tasks[1]
-        containers[1].innerHTML = tasks[0]
-    } else {
         containers[0].innerHTML = tasks[0]
         containers[1].innerHTML = tasks[1]
+    } else {
+        containers[0].innerHTML = tasks[1]
+        containers[1].innerHTML = tasks[0]
     }
 }
 
