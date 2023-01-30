@@ -3,7 +3,7 @@
   --colorText: #660000;
   --colorUserEnter: #007cff;
   --colorButton: #532f51;
-  --bcHome: #800080;
+  --bcHome: black;
   --border: #ffff00;
   --bb: linear-gradient(red, green, yellow);
 }
