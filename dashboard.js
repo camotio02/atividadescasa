@@ -2,6 +2,32 @@ var pessoas = {
     pessoa1: 'Casa, todos lixos, roupas, panos e os lixos da cozinha.',
     pessoa2: 'Cozinha, todos os banheiros e a calçada.'
 }
+const tasks = [
+    `  <strong id="tarefa0">
+        Cozinha, todos os banheiros e a calçada.
+        </strong>
+    `,
+    `   <strong id="tarefa1">
+        Casa, todos lixos, roupas,
+        panos e os lixos da cozinha.
+        </strong>
+    `
+]
+function getTasks() {
+    const containers = document.querySelectorAll('.lista')
+    const currentdate = new Date()
+    const oneJan = new Date(currentdate.getFullYear(), 0, 1);
+    const numberOfDays = Math.floor((currentdate - oneJan) / (24 * 60 * 60 * 1000));
+    const weekNumber = Math.ceil((currentdate.getDay() + 1 + numberOfDays) / 7);
+    //verifica se o weekNumber é par
+    if ((weekNumber % 2) === 0) {
+        containers[0].innerHTML = tasks[0]
+        containers[1].innerHTML = tasks[1]
+    } else {
+        containers[0].innerHTML = tasks[1]
+        containers[1].innerHTML = tasks[0]
+    }
+}
 
 function time() {
     today = new Date();
@@ -57,9 +83,19 @@ function time() {
         sabado.classList.add("hoje")
 
     } else {
-        sabado.classList.remove('hoje');
-        segunda.classList.add("hoje")
+      
     }
-
+    getTasks()
     setTimeout('time()', 500);
 }
+const divs = [
+    `  De 30/01 até 06/02 ano 2023
+    `
+]
+// function getEndDayAndFistDay() {
+//     const containers = document.querySelectorAll('.data_termino')
+//     const DATA = new Date()
+//     console.log(DATA.getDay() , 'dia')
+// }
+
+// getEndDayAndFistDay()
