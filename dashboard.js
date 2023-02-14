@@ -97,5 +97,4 @@ const divs = [
 //     const DATA = new Date()
 //     console.log(DATA.getDay() , 'dia')
 // }
-
 // getEndDayAndFistDay()
