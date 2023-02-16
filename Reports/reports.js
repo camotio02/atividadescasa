@@ -1,9 +1,30 @@
+var areasValor = document.querySelector('.valor');
+var res = document.getElementById('res');
+var areasPorcento = document.querySelector('.porcento');
+function porcentagem() {
+    areasValor.style.display = 'none'
+    res.innerHTML = 'Resultados em %'
+    areasPorcento.style.display = 'flex'
+}
 
+function valores() {
+    areasValor.style.display = 'flex'
+    res.innerHTML = 'Porcenragem em valor'
+    areasPorcento.style.display = 'none'
+}
 function refresh() {
-    alert('refresh')
+    location.reload();
 }
 function addPeople() {
-    alert('AddPeople')
+    var divs = [
+        `
+        <div class="infoPessoas">
+        <span>Pessoa 1</span>
+        <input value="" placeholder="digita o nome" id="name1" name="name1" type="text">
+        <span>Porcentagem em %</span>
+        <input value="" placeholder="digita a porcentagem" id="valor1" name="valor1" type="number">
+        </div>`
+    ]
 }
 function submit() {
     // PEGANDO OS CAMPOS DOS VALORES

@@ -11,12 +11,12 @@
 
 <body>
     <div class="reports">
-        <select id="cars">
-            <option value="volvo">porcentagem</option>
-            <option value="saab">valor</option>
-        </select>
+        <div class="select">
+            <span onclick="porcentagem()">Porcentagem</span>
+            <span onclick="valores()">Valores</span>
+        </div>
         <h1 class="reportsTitle">Converções dos valores enviados</h1>
-        <Card class="reportCard">
+        <Card class="reportCard porcento">
             <div class="infoPessoas">
                 <span>Pessoa 1</span>
                 <input value="" placeholder="digita o nome" id="name1" name="name1" type="text">
@@ -31,12 +31,27 @@
                 <input value="" placeholder="digita a porcentagem" id="valor2" name="valor2" type="number">
             </div>
         </Card>
+        <Card class="reportCard valor">
+            <div class="infoPessoas">
+                <span>Pessoa 1</span>
+                <input value="" placeholder="digita o nome" id="name1" name="name1" type="text">
+                <span>valor enviado</span>
+                <input value="" placeholder="digita o valor" id="valor1" name="valor1" type="number">
+            </div>
+
+            <div class="infoPessoas">
+                <span>Pessoa 2</span>
+                <input value="" placeholder="digita o nome" id="name2" name="name2" type="text">
+                <span>valor enviado</span>
+                <input value="" placeholder="digita a valor" id="valor2" name="valor2" type="number">
+            </div>
+        </Card>
         <div class="valorTotal">
             <span>Valor total</span>
             <input id="valorTotal" value="" name="valorTotal" placeholder="insira a valor" type="number">
         </div>
         <div class="resultsReports">
-            <h1>Resultados em valor</h1>
+            <h1 id="res">Resultados:</h1>
             <div id="resumoDoValor">
             </div>
             <div id="resumoPessoa1">
