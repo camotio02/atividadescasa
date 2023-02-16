@@ -32,7 +32,7 @@ function submit() {
             cujo o seu valor nela é: 
             R$ ${porcentagem1}
         `
-        valorPessoa2.innerHTML = `
+            valorPessoa2.innerHTML = `
             ${pessoa2} 
             enviou ${valor2}% de <span class='result'>R$ ${valortotal}</span>, 
             cujo o seu valor nela é: 
@@ -43,10 +43,12 @@ function submit() {
         }
     } else {
         alert(`
-        A soma do valor do 
-        ${pessoa1} e do ${pessoa2} 
-        equivale a ${new Number(valor1) + new Number(valor2)},
-        comparado a valor total ${valortotal}, nisso
-        passa dos limites, por isso a conta é rejeitada ):`)
+            A soma do valor do 
+            ${pessoa1} e do ${pessoa2} 
+             equivale a ${new Number(valor1) + new Number(valor2)},
+            comparado a valor total ${valortotal}, nisso
+            passa dos limites, por isso a conta é rejeitada 
+            ):
+        `)
     }
 }
