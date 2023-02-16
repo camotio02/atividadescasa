@@ -46,6 +46,7 @@
     color: black;
     font-family: serif;
 }
+
 .infoPessoas input {
     display: flex;
     align-items: flex-start;
@@ -56,8 +57,9 @@
     outline: none;
     background: transparent;
     border-bottom: 1px solid #000;
-} 
-.valorTotal input { 
+}
+
+.valorTotal input {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,7 +70,8 @@
     background: transparent;
     border-bottom: 1px solid rgb(255, 255, 255);
 }
-.valorTotal span { 
+
+.valorTotal span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -79,6 +82,7 @@
     background: transparent;
     border: 0.5px solid rgb(255, 255, 255);
 }
+
 .valorTotal {
     display: flex;
     align-items: flex-start;
@@ -88,7 +92,20 @@
     color: yellow;
 }
 
+.resultsReports {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 90%;
+    font-size: 100%;
+    overflow: auto;
+    color: #fff;
+}
 
+.result {
+    color: #D35400;
+}
 
 
 .ferramentas {
@@ -104,6 +121,7 @@
     padding: 3px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
 .ferramentas div {
     display: flex;
     align-items: center;
@@ -115,12 +133,15 @@
     font-size: 100%;
     padding: 1%;
 }
+
 .ferramentas div:nth-child(1) {
     background-color: green;
 }
+
 .ferramentas div:nth-child(2) {
     background-color: rgb(128, 41, 0);
 }
+
 .ferramentas div:nth-child(3) {
     background-color: gray;
 }
