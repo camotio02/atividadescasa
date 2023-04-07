@@ -1,16 +1,11 @@
-var pessoas = {
-    pessoa1: 'Casa, todos lixos, roupas, panos e os lixos da cozinha.',
-    pessoa2: 'Cozinha, todos os banheiros e a calçada.'
-}
 const tasks = [
-    `  <strong id="tarefa0">
-        Cozinha, todos os banheiros e a calçada.
-        </strong>
+    `  <h3 id="tarefa0">
+        Acontecendo mudanças...
+        </h3>
     `,
-    `   <strong id="tarefa1">
-        Casa, todos lixos, roupas,
-        panos e os lixos da cozinha.
-        </strong>
+    `   <h3 id="tarefa1">
+        Acontecendo mudanças...
+        </h3>
     `
 ]
 function getTasks() {
@@ -30,6 +25,7 @@ function getTasks() {
 }
 
 function time() {
+    const dey = document.querySelectorAll("div.day")
     today = new Date();
     h = today.getHours();
     m = today.getMinutes();
@@ -41,60 +37,16 @@ function time() {
         ${addZero(today.getMonth() + 1)}/
         ${addZero(today.getFullYear())}
         `
-    tarefa0 = document.getElementById('tarefa0')
-    tarefa1 = document.getElementById('tarefa1')
-    domingo = document.getElementById('domingo')
-    segunda = document.getElementById('segunda')
-    terca = document.getElementById('terca')
-    quarta = document.getElementById('quinta')
-    quinta = document.getElementById('quarta')
-    sexta = document.getElementById('sexta')
-    sabado = document.getElementById('sabado')
     var semana = [0, 1, 2, 3, 4, 5, 6];
-    if (semana.indexOf(0) == today.getDay()) {
-        domingo.classList.add("hoje")
-    } else if (semana.indexOf(1) == today.getDay()) {
-        domingo.classList.remove('hoje');
-        segunda.classList.add("hoje")
+    const deyFind = semana.find((item) =>
+        item == today.getDay()
+    )
 
-    } else if (semana.indexOf(2) == today.getDay()) {
-
-        segunda.classList.remove('hoje');
-        terca.classList.add("hoje")
-
-    } else if (semana.indexOf(3) == today.getDay()) {
-
-        terca.classList.remove('hoje');
-        quarta.classList.add("hoje")
-
-    } else if (semana.indexOf(4) == today.getDay()) {
-
-        quarta.classList.remove('hoje');
-        quinta.classList.add("hoje")
-
-    } else if (semana.indexOf(5) == today.getDay()) {
-
-        quinta.classList.remove('hoje');
-        sexta.classList.add("hoje")
-
-    } else if (semana.indexOf(6) == today.getDay()) {
-
-        sexta.classList.remove('hoje');
-        sabado.classList.add("hoje")
-
+    if (dey[deyFind]) {
+        dey[deyFind].classList.add("hoje")
     } else {
-      
+        dey[!deyFind].classList.remove("hoje")
     }
     getTasks()
     setTimeout('time()', 500);
 }
-const divs = [
-    `  De 30/01 até 06/02 ano 2023
-    `
-]
-// function getEndDayAndFistDay() {
-//     const containers = document.querySelectorAll('.data_termino')
-//     const DATA = new Date()
-//     console.log(DATA.getDay() , 'dia')
-// }
-// getEndDayAndFistDay()
