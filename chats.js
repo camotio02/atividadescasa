@@ -7,7 +7,8 @@ const addZero = (value) => value < 10 ? `0${value}` : value
 const fullDate = `
 ${addZero(today.getDate())}/
 ${addZero(today.getMonth() + 1)}/
-${addZero(today.getFullYear())}
+${addZero(today.getFullYear())} as ${addZero(h)}:
+${addZero(m)}m
 `
 var db = openDatabase("DataMessages", "2.0", "Mybase", 4048);
 db.transaction(function (criar) {
@@ -16,7 +17,7 @@ db.transaction(function (criar) {
 function sendMessages() {
     var sms = document.querySelector("input#message").value
     db.transaction(function (addMessage) {
-        addMessage.executeSql("INSERT INTO messages (dataCriacao,conteudo) values (?,?)", [fullDate,sms]);
+        addMessage.executeSql("INSERT INTO messages (dataCriacao,conteudo) values (?,?)", [fullDate, sms]);
     })
     showMessages()
 }
