@@ -241,6 +241,7 @@ div.chat-content {
   height: 100%;
   overflow: auto;
   padding: 1rem;
+  margin-bottom: 4rem;
 }
 div.chat-content > span {
   position: relative;
