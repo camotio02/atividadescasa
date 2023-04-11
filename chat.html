@@ -6,43 +6,87 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chats with friends</title>
-    <link rel="stylesheet" href="./dashboard.css" />
-    <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./chat.css">
+    < <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
 </head>
 
 <body>
-    <Stack class="home">
-        <div class="siteBar">
-            <div class="localAvatar">
-                <img src="./perfil.jpeg" alt="perfil" />
-            </div>
-            <div class="links">
-                <div class="name">Junta Mais</div>
-                <div class="div">
-                    <a href="./dashboard.html"> Home </a>
-                    <a href="./colaboradores.html"> Membres </a>
-                    <a href="./reclamacoes.html"> Claims </a>
-                </div>
+    <div class="app">
+        <div class="head">
+            <span class="messages-notification">
+                <i class="fa fa-comments-o"></i>
+                <span class="count">2</span>
+            </span>
+
+            <span class="create-new">
+                <i class="fa fa-comments-o"></i>
+                <i class="fa fa-tags"></i>
+                <i class="fa fa-heart"></i>
+                <i class="fa fa-clock-o"></i>
+                <i class="fa fa-cog"></i>
+                <i class="fa fa-pencil-square-o"></i>
+            </span>
+        </div>
+
+        <div class="search-bar">
+            <i class="fa fa-search"></i>
+            <input type="text" class="ip-search" placeholder="Search" />
+        </div>
+
+        <div class="body">
+            <div class="friend-list">
+
+                <li class="user">
+                    <span class="messages">
+                        <span class="count">1</span>
+                    </span>
+                    <img src="./images/quizito.jpeg" alt="" />
+                    <span class="name">
+                        Quizito
+                        <span class="status">
+                            Active 2h ago
+                        </span>
+                    </span>
+                </li>
+                <li class="user">
+                    <span class="messages hide">
+                        <span class="count"></span>
+                    </span>
+                    <img src="./images/timu.jpg" alt="" />
+                    <span class="name">
+                        Temotio
+                        <span class="status">
+                            Online
+                        </span>
+                    </span>
+                </li>
+                <li class="user">
+                    <span class="messages">
+                        <span class="count">14</span>
+                    </span>
+                    <img src="./images/tata.jpg" alt="" />
+                    <span class="name">
+                        Thaís
+                        <span class="status">
+                            Active 2 mins ago
+                        </span>
+                    </span>
+                </li>
+
             </div>
         </div>
-        <div class="card">
-            <h1 class="title">
-                O chat aqui é massa! borra.
-            </h1>
-            <div class="chatfriend">
-                Mensagens
-            </div>
-            <div class="sends">
-                <input placeholder="Mensagem" class="messegaes">
-      
-                </input>
-                <img src="./send-message.png" alt="">
-            </div>
+        <div class="chat-content">
+            
         </div>
+        <div class="msg-box">
+            <input id="message" type="text" class="ip-msg" placeholder="type something.." />
+            <span class="btn-group">
+                <i class="fa fa-paperclip"></i>
+                <i onclick="sendMessages()"  class="fa fa-paper-plane"></i>
+            </span>
         </div>
-    </Stack>
-    <script src="./dashboard.js"></script>
+    </div>
+    <script src="./chats.js"></script>
 </body>
 
 </html>
