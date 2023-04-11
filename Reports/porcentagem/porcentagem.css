@@ -165,7 +165,9 @@
     color: white;
     cursor: pointer;
 }
-
+.valor {
+    display: none;
+}
 .valor .infoPessoas{
     border: 5px solid #D35400;
     background-color: rgb(214, 214, 214);

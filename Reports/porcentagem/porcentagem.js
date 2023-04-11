@@ -1,10 +1,11 @@
-// var areasValor = document.querySelector('.valor');
-// var res = document.getElementById('res');
+var areasValor = document.querySelector('.valor');
+var res = document.getElementById('res');
+var areasPorcento = document.querySelector('.porcento');
 function porcentagem() {
-    window.location.href = './porcentagem/porcentagem.html'
+    window.location.href = './porcentagem.html'
 }
 function valores() {
-    window.location.href = './reports.html'
+    window.location.href = '../reports.html'
 }
 
 function refresh() {
@@ -34,8 +35,8 @@ function submit() {
     var valor1Pessoa = document.getElementById('resumoPessoa1');
     var valorPessoa2 = document.getElementById('resumoPessoa2');
 
-    var porcentagem1 = ((valor1) - (valortotal)) * 100/valor1
-    var porcentagem2 = ((valor2) - (valortotal)) * 100/valor2
+    var porcentagem1 = ((valor1) * (valortotal)) / 100
+    var porcentagem2 = ((valor2) * (valortotal)) / 100
     if ((new Number(porcentagem1) + new Number(porcentagem2)) < new Number(valortotal)) {
         if ((valor1 == 100 || valor1 < 100)
             &&

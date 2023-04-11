@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reports</title>
-    <link rel="stylesheet" href="./reports.css">
-    <style>
-          .select span:nth-child(2){
+    <link rel="stylesheet" href="./porcentagem.css">
+    <style> 
+    .select span:nth-child(1){
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 3px solid #D35400;
+        border: 3px solid green;
     }
     .select span:hover{
         display: flex;
@@ -30,20 +30,20 @@
             <span onclick="porcentagem()">Porcentagem</span>
             <span onclick="valores()">Valores</span>
         </div>
-        <h1 class="reportsTitle">Converções dos valores em porcentagens</h1>
-        <Card class="reportCard valor">
+        <h1 class="reportsTitle">Converções das porcentagens em valores</h1>
+        <Card class="reportCard porcento">
             <div class="infoPessoas">
                 <span>Pessoa 1</span>
                 <input value="" placeholder="digita o nome" id="name1" name="name1" type="text">
-                <span>valor enviado</span>
-                <input value="" placeholder="digita o valor" id="valor1" name="valor1" type="number">
+                <span>Porcentagem em %</span>
+                <input value="" placeholder="digita a porcentagem" id="valor1" name="valor1" type="number">
             </div>
 
             <div class="infoPessoas">
                 <span>Pessoa 2</span>
                 <input value="" placeholder="digita o nome" id="name2" name="name2" type="text">
-                <span>valor enviado</span>
-                <input value="" placeholder="digita a valor" id="valor2" name="valor2" type="number">
+                <span>Porcentagem em %</span>
+                <input value="" placeholder="digita a porcentagem" id="valor2" name="valor2" type="number">
             </div>
         </Card>
         <div class="valorTotal">
@@ -65,7 +65,7 @@
             <div onclick="refresh()">Refresh</div>
         </div>
     </div>
-    <script src="./reports.js"></script>
+    <script src="./porcentagem.js"></script>
 </body>
 
 </html>
